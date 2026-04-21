@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: "config-{{AGENT_ID}}"
-  namespace: "agents-{{TEAM_NAME}}"
+  name: "config-tomom"
+  namespace: "agents-dev"
 data:
-  AGENT_ID: "{{AGENT_ID}}"
-  TEAM_NAME: "{{TEAM_NAME}}"
-  PLATFORM_REGISTRY_URL: "{{APIM_BASE_URL}}"
-  KEYVAULT_URL: "{{KEYVAULT_URL}}"
-  AZURE_OPENAI_ENDPOINT: "{{AZURE_OPENAI_ENDPOINT}}"
+  AGENT_ID: "tomom"
+  TEAM_NAME: "dev"
+  PLATFORM_REGISTRY_URL: "https://apim-shop-poc.azure-api.net"
+  KEYVAULT_URL: "https://kv-shop-poc.vault.azure.net/"
+  AZURE_OPENAI_ENDPOINT: "https://oai-shop-poc.openai.azure.com/"
   AZURE_OPENAI_DEPLOYMENT: "gpt-4o"
-  OTEL_SERVICE_NAME: "{{AGENT_ID}}"
+  OTEL_SERVICE_NAME: "tomom"
